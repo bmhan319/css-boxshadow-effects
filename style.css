@@ -1,0 +1,49 @@
+:root {
+  --border: 1px solid #000;
+}
+
+body {
+  padding: 24px;
+}
+
+.window {
+  max-width: 300px;
+  margin-bottom: 24px;
+  background: #fafafa;
+  padding: 16px; 
+  text-align: center;
+  border: var(--border)
+}
+
+.picture {
+  height: 100px;
+  background-color: #ccc;
+  border: var(--border)
+}
+
+
+
+/*Fly Forward */
+.v1 {
+  box-shadow: 0px 15px 10px rgba(0,0,0,.15);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.v1:hover {
+  box-shadow: 0px 15px 30px rgba(0,0,0,.3);
+  transform: scale(1.02)
+}
+
+
+/* Fall Back */
+.v2 {
+  box-shadow: 0px 15px 10px rgba(0,0,0,.15);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.v2:hover {
+  box-shadow: 0px 5px 5px rgba(0,0,0,.3);
+  transform: scale(.98)
+}
+
+
